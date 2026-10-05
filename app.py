@@ -346,11 +346,12 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
     st.markdown('<style>div[role="radiogroup"] p {color: #FFFFFF !important; font-weight: 500;}</style>', unsafe_allow_html=True)
-    st.markdown("**Navegación**")
+    st.markdown("### Navegación")
     pagina = st.radio(
-        "",
+        "Selecciona la vista",
         ["📊 Resumen general", "🗺️ Mapa georreferenciado",
          "📈 Tendencias temporales", "⚖️ Comparativo"],
+        index=0,
         label_visibility="collapsed"
     )
 
